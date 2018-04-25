@@ -11,7 +11,7 @@
     "clear": "rimraf lib",
     "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
     "start": "npm run build",
-    "start:dev": "PORT=3005 nodemon --inspect --exec babel-node src/server.js",
+    "dev": "PORT=3005 nodemon --inspect --exec babel-node src/server.js",
     "debug": "babel-node-debug src/server.js",
     "build": "./node_modules/.bin/babel src -d dist && npm run serve",
     "serve": "node dist/server.js"

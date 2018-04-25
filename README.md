@@ -1,29 +1,29 @@
-# README #
+> Project using express and websocket to send information
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### ENDPOINT
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+| Type | Endpoint |           Return           |                       Description                      |
+|:----:|:--------:|:--------------------------:|:------------------------------------------------------:|
+| POST | /:uuid   | { msg: String }            | Recive data of http and send to websocket              |
+| WS   | /        | { token, ...request.body } | Send token to client and message to specific websocket |
 
 ### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
+- Configuration
+```shell
+npm i
+```
+- This project use es6 imports
+- Dependencies
+  - Websocket
+  - Express
+- Deployment instructions
+```shell
+npm run dev
+```
+- Deploy
+```shell
+npm start
+```
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* luketevl@gmail.com
