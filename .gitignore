@@ -11,6 +11,7 @@ npm-debug.*
 android/
 #
 build/
+dist/
 .idea
 .tmp
 .gradle
